@@ -1,7 +1,6 @@
-package ar.edu.unju.fi.model;
+package ar.edu.unju.fi.ejercicio1.model;
 
-import ar.edu.unju.fi.constantes.Categoria;
-import ar.edu.unju.fi.constantes.OrigenFabricacion;
+
 
 public class Producto {
 	private String codigo;
@@ -25,48 +24,68 @@ public class Producto {
 	}
 
 
+	public enum Categoria {
+		TELEFONIA, INFORMATICA, ELECTROHOGAR, HERRAMIENTAS
+	}
+	public enum OrigenFabricacion {
+
+		ARGENTINA , CHINA , BRASIL , URUGUAY 
+	}
 	public final String getCodigo() {
 		return codigo;
 	}
+
 
 	public final void setCodigo(String codigo) {
 		this.codigo = codigo;
 	}
 
+
 	public final String getDescripcion() {
 		return descripcion;
 	}
+
 
 	public final void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
 
+
 	public final float getPrecioUnitario() {
 		return precioUnitario;
 	}
+
 
 	public final void setPrecioUnitario(float precioUnitario) {
 		this.precioUnitario = precioUnitario;
 	}
 
+
 	public final OrigenFabricacion getOrigendeFabricacion() {
 		return origendeFabricacion;
 	}
+
 
 	public final void setOrigendeFabricacion(OrigenFabricacion origendeFabricacion) {
 		this.origendeFabricacion = origendeFabricacion;
 	}
 
+
 	public final Categoria getCategoria() {
 		return categoria;
 	}
+
 
 	public final void setCategoria(Categoria categoria) {
 		this.categoria = categoria;
 	}
 
 
-	
+	@Override
+	public String toString() {
+		return "Producto [codigo=" + codigo + ", descripcion=" + descripcion + ", precioUnitario=" + precioUnitario
+				+ ", origendeFabricacion=" + origendeFabricacion + ", categoria=" + categoria + "]";
+	}
 
 	
 }
