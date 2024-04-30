@@ -17,7 +17,7 @@ public class Main {
 		provincia[4] = Provincia.LARIOJA;
 		provincia[5] = Provincia.SANTIAGODELESTERO;
 	}
-
+	
 	public static void mostrar(Provincia[] provincia) {
 		for(int i = 0; i < provincia.length; i++) {
 			System.out.println("Cantidad de Poblacion: "+provincia[i].getCantidadPoblacion());
