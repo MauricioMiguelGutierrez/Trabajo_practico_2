@@ -1,3 +1,5 @@
+//Tuve que eliminar mi rama y volverla a hacer porque no se habia creado mergeado correctamente
+//debido a un problema del programa
 package ar.edu.unju.fi.ejercicio3.main;
 
 import ar.edu.unju.fi.ejercicio3.constantes.Provincia;
@@ -17,7 +19,7 @@ public class Main {
 		provincia[4] = Provincia.LARIOJA;
 		provincia[5] = Provincia.SANTIAGODELESTERO;
 	}
-
+	
 	public static void mostrar(Provincia[] provincia) {
 		for(int i = 0; i < provincia.length; i++) {
 			System.out.println("Cantidad de Poblacion: "+provincia[i].getCantidadPoblacion());
